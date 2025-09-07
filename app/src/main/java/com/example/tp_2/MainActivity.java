@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
         binding.btnBuscar.setOnClickListener(v -> {
             Log.d("Boton","Boton buscar presionado");
             String texto = binding.etTituloBuscar.getText().toString();
-            Log.d("libro", texto);
-            viewModel.buscarLibro(texto);
+                    Log.d("libro", texto);
+                    viewModel.buscarLibro(texto);
         });
 
         viewModel.getlibroEncotrado().observe(this, libro -> {
